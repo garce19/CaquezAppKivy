@@ -5,8 +5,6 @@ class Usuario:
         self._apellido = None
         self._email = None
         self._celular = None
-        self._barrio = None
-        self._direccion = None
 
     @property
     def nombre(self):
@@ -28,13 +26,6 @@ class Usuario:
     def celular(self):
         return self._celular
 
-    @property
-    def barrio(self):
-        return self._barrio
-
-    @property
-    def direccion(self):
-        return self._direccion
 
     @nombre.setter
     def nombre(self, nombre):
@@ -56,13 +47,6 @@ class Usuario:
     def celular(self, celular):
         self._celular = celular
 
-    @barrio.setter
-    def barrio(self, barrio):
-        self._barrio = barrio
-
-    @direccion.setter
-    def direccion(self, direccion):
-        self._direccion = direccion
     def __str__(self):
         return f'Nombre: {self.nombre} | Apellido: {self.apellido} | ID: {self.id}'
 
