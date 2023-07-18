@@ -2,10 +2,10 @@ from model.Usuario import Usuario
 
 
 class Habitante(Usuario):
-    def __init__(self):
-        super().__init__()
-        self._barrio = None
-        self._direccion = None
+    def __init__(self,id, nombre, apellido, celular, email, password, barrio, direccion):
+        super().__init__(id, nombre, apellido, celular, email, password)
+        self._barrio = barrio
+        self._direccion = direccion
 
     @property
     def barrio(self):
