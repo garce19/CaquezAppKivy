@@ -1,8 +1,8 @@
 class Espacio:
-    def __init__(self, nombre, direccion, es24Horas, barrio, calificacion, descripcion):
+    def __init__(self, nombre, direccion, es_24_horas, barrio, calificacion, descripcion):
         self._nombre = nombre
         self._direccion = direccion
-        self._es24Horas = es24Horas
+        self._es_24_Horas = es_24_horas
         self._barrio = barrio
         self._calificacion = calificacion
         self._descripcion = descripcion
@@ -16,8 +16,8 @@ class Espacio:
         return self._direccion
 
     @property
-    def es24Horas(self):
-        return self._es24Horas
+    def es_24_horas(self):
+        return self._es_24_Horas
 
     @property
     def barrio(self):
